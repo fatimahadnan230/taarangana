@@ -49,7 +49,7 @@ export default function HomePage() {
         top: 0, 
         left: 0, 
         width: '100vw', 
-        height: '100dvh', /* Switched to dvh here too */
+        height: '100dvh', 
         zIndex: 0, 
         pointerEvents: 'none',
         opacity: showVortex ? 1 : 0, 
@@ -64,7 +64,6 @@ export default function HomePage() {
         )}
       </div>
 
-      {/* REMOVED the intermediate div. Sections are now direct children of the wrapper */}
       <section className="snap-section" ref={homeComp1Ref}>
         <HomeComp1 />
       </section>
